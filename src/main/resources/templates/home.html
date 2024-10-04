@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body>
+	<div align="center">
+	<h3 th:if="${success}" style="color:green" th:text="${success}"></h3>
+		<h1>Employee Management</h1>
+		<a href="/add-employee"><button>Add Employee</button></a>
+		<button>Fetch Employees</button>
+		<button>Fetch Employee By Name</button>
+		<button>Fetch By Salary</button>
+	</div>
+</body>
+</html>
